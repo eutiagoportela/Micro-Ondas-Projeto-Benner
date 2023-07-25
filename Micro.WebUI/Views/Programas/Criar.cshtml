@@ -1,0 +1,68 @@
+﻿@model Micro.Aplicacao.DTOs.ProgramaDTO
+
+<h2>Registrar Novo Programa</h2>
+@Html.ValidationMessage("Error")
+<form asp-action="Criar">
+
+    <div class="form-horizontal">
+
+        <hr />
+
+        <div asp-validation-summary="All" class="text-danger"></div>
+
+        <div class="form-group">
+            <label asp-for="Nome" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Nome" class="form-control" />
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Alimento" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Alimento" class="form-control" />
+                <span asp-validation-for="Alimento" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Tempo" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Tempo" class="form-control" />
+                <span asp-validation-for="Tempo" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Potencia" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Potencia" class="form-control" />
+                <span asp-validation-for="Potencia" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Instrucoes" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Instrucoes" class="form-control" />
+                <span asp-validation-for="Instrucoes" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Aquece" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Aquece" class="form-control" />
+                <span asp-validation-for="Aquece" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Criar" class="btn btn-success" />
+                <a asp-action="Index" class="btn btn-info">Voltar para Lista</a>
+            </div>
+        </div>
+    </div>
+</form>

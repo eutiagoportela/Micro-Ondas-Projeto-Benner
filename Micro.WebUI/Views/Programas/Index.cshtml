@@ -1,0 +1,144 @@
+﻿@model IEnumerable<Micro.Aplicacao.DTOs.ProgramaDTO>
+
+@{
+    ViewData["Title"] = "Gerenciamento de Programas";
+}
+
+<div>
+    <h2>@ViewData["Title"]</h2>
+</div>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <div>
+            <div class="pull-left">
+                <a asp-action="Criar" class="btn btn-primary">
+                    <span title="Registrar Novo" class="fas fa-plus"></span> Registrar Novo
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<div class="panel panel-default">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nome)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Alimento)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Tempo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Potencia)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Instrucoes)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Aquece)
+                </th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody> 
+              
+            @foreach (var item in Model)
+            {
+                @if (item.Id <=5)
+                {
+                    <tr>
+                      
+                        <th>
+                            <font style="font-style: italic;">
+                               @Html.DisplayFor(modelItem => item.Id)
+                            </font>
+                        </th>
+                        <th>
+                            <font style="font-style: italic;">
+                              @Html.DisplayFor(modelItem => item.Nome)
+                            </font>
+                        </th>
+                        <th>
+                            <font style="font-style: italic;">
+                              @Html.DisplayFor(modelItem => item.Alimento)
+                            </font>
+                        </th>
+                        <th>
+                            <font style="font-style: italic;">
+                              @Html.DisplayFor(modelItem => item.Tempo)
+                            </font>
+                        </th>
+                        <th>
+                            <font style="font-style: italic;">
+                              @Html.DisplayFor(modelItem => item.Potencia)
+                            </font>
+                        </th>
+                        <th>
+                            <font style="font-style: italic;">
+                              @Html.DisplayFor(modelItem => item.Instrucoes)
+                            </font>
+                        </th>
+                        <th>
+                            <font style="font-style: italic;">
+                              @Html.DisplayFor(modelItem => item.Aquece)
+                            </font>
+                        </th>
+                        
+                        <th></th>
+                        <td>
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    <tr>
+                        <th>
+                            @Html.DisplayFor(modelItem => item.Id)
+                        </th>
+                        <th>
+                            @Html.DisplayFor(modelItem => item.Nome)
+                        </th>
+                        <th>
+                            @Html.DisplayFor(modelItem => item.Alimento)
+                        </th>
+                        <th>
+                            @Html.DisplayFor(modelItem => item.Tempo)
+                        </th>
+                        <th>
+                            @Html.DisplayFor(modelItem => item.Potencia)
+                        </th>
+                        <th>
+                            @Html.DisplayFor(modelItem => item.Instrucoes)
+                        </th>
+                        <th>
+                            @Html.DisplayFor(modelItem => item.Aquece)
+                        </th>
+                        <th></th>
+                        <td>
+
+                            <a asp-action="Editar" asp-route-id="@item.Id" title="Editar" class="btn btn-warning">
+                                <span class="fas fa-edit">Editar</span>
+                            </a>
+
+                            <a asp-action="Deletar" asp-route-id="@item.Id" title="Deletar" class="btn btn-danger">
+                                <span class="fas fa-trash-alt">Deletar</span>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+
+

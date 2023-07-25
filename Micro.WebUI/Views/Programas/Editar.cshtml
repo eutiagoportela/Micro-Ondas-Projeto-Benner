@@ -1,0 +1,56 @@
+﻿@model Micro.Aplicacao.DTOs.ProgramaDTO
+
+<h3>Editar Programa</h3>
+@Html.ValidationMessage("Error")
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Editar">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Nome" class="control-label"></label>
+                <input asp-for="Nome" class="form-control" />
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Alimento" class="control-label"></label>
+                <input asp-for="Alimento" class="form-control" />
+                <span asp-validation-for="Alimento" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Tempo" class="control-label"></label>
+                <input asp-for="Tempo" class="form-control" />
+                <span asp-validation-for="Tempo" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Potencia" class="control-label"></label>
+                <input asp-for="Potencia" class="form-control" />
+                <span asp-validation-for="Potencia" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Instrucoes" class="control-label"></label>
+                <input asp-for="Instrucoes" class="form-control" />
+                <span asp-validation-for="Instrucoes" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Aquece" class="control-label"></label>
+                <input asp-for="Aquece" class="form-control" />
+                <span asp-validation-for="Aquece" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-info">Voltar para Lista</a>
+</div>
