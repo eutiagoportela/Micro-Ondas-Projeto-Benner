@@ -11,7 +11,7 @@ Teste Micro Ondas feito de teste, para empresa Benner.
 ![image](https://github.com/eutiagoportela/Micro-Ondas-Teste-Benner/assets/30733976/35dd9fac-eefe-41a7-a7a7-0d367292a951)</br>
 ![image](https://github.com/eutiagoportela/Micro-Ondas-Teste-Benner/assets/30733976/5d317089-b976-439e-a397-f35ec47f6771)</br>
 
-3-WebAPI com os EndPoints e autenticação JWT Bearer e controle de usuário.</br>
+3-WebAPI com os EndPoints e autenticação JWT Bearer, controle de usuário e geração de Log em arquivo texto na pasta Log.</br>
 ![image](https://github.com/eutiagoportela/Micro-Ondas-Teste-Benner/assets/30733976/b5c07030-095b-4af6-8d35-502984ea95a8)</br>
 
 
