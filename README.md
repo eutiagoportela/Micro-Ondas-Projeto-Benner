@@ -1,5 +1,5 @@
 # Micro-Ondas-Teste-Benner
-Teste Micro Ondas feito de teste, para empresa Benner.
+Teste Micro Ondas realizado e disponibilizado aqui para a empresa Benner.
 
 
 1-Front Micro Ondas em Windows Forms.</br>
