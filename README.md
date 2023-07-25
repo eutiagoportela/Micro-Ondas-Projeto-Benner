@@ -16,5 +16,10 @@ Teste Micro Ondas feito de teste, para empresa Benner.
 
 
 Obs: Exemplo de Cadastro de Login e Senha na WebAPI e WebUI, basta baixar e rodar o update-database, que os pré programas serão adicionados e banco criado e para alterar entre a WebUI, DesktopForms e WebAPI, basta definir o projeto que deseja inicializar desses três.</br>
+Exemplo de Cadastro e senha:</br>
+{</br>
+  "email": "testeX@localhost",</br>
+  "password": "Abcd@123456"</br>
+}</br>
 ![image](https://github.com/eutiagoportela/Micro-Ondas-Teste-Benner/assets/30733976/9b13a3b0-cc10-42ac-9d06-acc7c8f23213)
 
